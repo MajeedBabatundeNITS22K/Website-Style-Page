@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majeed Samsung Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="#s24">Samsung Galaxy S24</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specifications</a></li>
+                <li><a href="#buy">Buy Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Samsung Galaxy S24 Section (on top of the features section) -->
+        <section id="s24">
+            <div class="s24-heading">
+                <img src="S24 image.jpeg" alt="Samsung Galaxy S24" class="s24-image">
+                <div>
+                    <h2>Samsung Galaxy S24</h2>
+                    <p>The future of smartphones, now available for you!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Top Features</h2>
+            <ul>
+                <li>Stunning 6.8" Dynamic AMOLED 2X display</li>
+                <li>Powerful Snapdragon 8 Gen 2 chip</li>
+                <li>108MP Ultra High-Resolution Camera</li>
+                <li>Fast Charging & Long-lasting Battery</li>
+                <li>5G Connectivity for Speed</li>
+            </ul>
+        </section>
+
+        <!-- Specifications Section -->
+        <section id="specs">
+            <h2>Specifications</h2>
+            <table>
+                <tr>
+                    <td>Display:</td>
+                    <td>6.8" Dynamic AMOLED 2X</td>
+                </tr>
+                <tr>
+                    <td>Processor:</td>
+                    <td>Snapdragon 8 Gen 2</td>
+                </tr>
+                <tr>
+                    <td>Camera:</td>
+                    <td>108MP Main, 12MP Ultra-wide, 10MP Telephoto</td>
+                </tr>
+                <tr>
+                    <td>Battery:</td>
+                    <td>5000mAh with 45W Fast Charging</td>
+                </tr>
+                <tr>
+                    <td>Storage Options:</td>
+                    <td>128GB, 256GB, 512GB</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="buy">
+            <h2>Buy Samsung Galaxy S24</h2>
+            <p>Get the latest Samsung Galaxy S24 today!</p>
+            <!-- Buy Now Button with Link -->
+            <button onclick="window.location.href='https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjC8sLR0PKKAxWvGKIDHWedNysYABA5GgJsZQ&ae=2&aspm=1&co=1&ase=5&gclid=Cj0KCQiAkJO8BhCGARIsAMkswyjiaJSpRvq2EnYJm_3IiGWM0qQ0Q5V8tFHGY6taoxn2TkqXkIFP0FUaApvyEALw_wcB&ohost=www.google.com&cid=CAESV-D26_35NoUTJL707jUaLNony-EejQX5dnNoVbULcbRTXicBL6ulzqK0OHKJRslv8JQM8PZu_XSzGPB3dAOjKiocDfAGSmwflNBRu1mNilxPROc4TFoHgQ&sig=AOD64_12Arg9Px6jMqSAaODwqSGayEJGtg&q&adurl&ved=2ahUKEwjTjL3R0PKKAxVrJxAIHflaHnwQ0Qx6BAgmEAM'">Buy Now</button>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: support@samsung.com</li>
+                <li>majeedbabs03@gmail.com</li>
+                <li>+358 466336898</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Samsung Electronics. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
